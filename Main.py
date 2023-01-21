@@ -324,7 +324,7 @@ async def start(update, context):
   cursorUsers = connUsers.cursor()
   User_ID = str(update.message.from_user['id'])
   User=update.message.from_user['username']
-  cursorUsers.execute('INSERT INTO Users (UserID,Username) VALUES (?,?)',(User_ID,User))
+  cursorUsers.execute('INSERT ******** VALUES (?,?)',(User_ID,User))
   connUsers.commit()
   connUsers .close()
 
